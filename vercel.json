@@ -1,7 +1,14 @@
 {
   "functions": {
-    "*.php": {
+    "**/*.php": {  // 递归匹配所有子目录的 PHP 文件
       "runtime": "vercel-php@0.7.1"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/(.*)", 
+      "dest": "/$1",
+      "continue": true  // 继续匹配其他规则
+    }
+  ]
 }

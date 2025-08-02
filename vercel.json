@@ -6,9 +6,8 @@
   },
   "routes": [
     {
-      "src": "/(.*)", 
-      "dest": "/$1",
-      "continue": true
+      "src": "/", 
+      "dest": "/index.php"
     }
   ]
 }

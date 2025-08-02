@@ -7,7 +7,15 @@
   "routes": [
     {
       "src": "/", 
-      "dest": "/index.php"
+      "dest": "api/index.php"
+    },
+  
+    {
+      "src": "/(.*)",
+      "dest": "$1",
+      "continue": true
     }
   ]
+
+  
 }
